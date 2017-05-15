@@ -1,0 +1,30 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  #config.vm.box = "bento/centos-7.1"
+  config.vm.box = "hashicorp/precise32"
+
+    config.vm.network "private_network", ip: "192.168.1.5"
+  #config.vm.provider :virtualbox do |vb|
+  #  vb.customize ["modifyvm", :id, "--memory", "3072", "--ioapic", "on", "--cpus", "2"]
+  #end
+
+   #config.vm.network :private_network, type: :dhcp
+
+     #config.vm.define "jenkins" do |c|
+      #  c.vm.network :private_network, virtualbox__intnet: true, ip: "192.168.111.10"
+       # c.vm.hostname = "jenkins.se.cepheid.pri"
+      #end
+
+  #config.vm.provision "ansible" do |ansible|
+        #ansible.verbose = "v"
+        #ansible.playbook = "jenkins_configuration/provision.yml"
+        #ansible.galaxy_role_file = 'jenkins_configuration/requirements.yml'
+  #end
+
+end
+

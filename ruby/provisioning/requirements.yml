@@ -1,0 +1,4 @@
+#This role is used to install jdk oracle version: https://github.com/William-Yeh/ansible-oracle-java
+- src:  williamyeh.oracle-java
+- src:  geerlingguy.ruby
+

@@ -1,0 +1,37 @@
+# vim
+*.swp
+
+# sublime
+*.sublime-project
+*.sublime-workspace
+
+# emacs
+*~
+
+**/ebin/**
+log/*.log*
+.eunit/
+erl_crash.dump
+**/deps/**
+rel/**
+*.srl
+.bundle/**
+scripts/.bundle/**
+/tmp/**
+*.sublime-project
+*.sublime-workspace
+**/.rebar/**
+/data
+/data-*
+*.beam
+ct-logs/
+logger-vm/cert/
+.vagrant/
+.idea/
+build/
+.gradle/
+#Eclips
+.project
+.vagrant
+.vagrant/
+/deps/
